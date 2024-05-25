@@ -12,9 +12,6 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.hero}>
 
-          <h1 className={styles.title}>PALTA<span className={styles.bold}>BOT</span></h1>
-          <p className={styles.description}>¡Descubre cómo podemos llevar tu producción de palta al siguiente nivel!</p>
-          <button className={styles.registerButton}>REGÍSTRATE</button>
           <div className={styles.heroImages}>
 
           </div>
@@ -22,6 +19,8 @@ export default function Home() {
 
         <section className={styles.features}>
           <h2 className = {styles.titletrabajar}>¿QUÉ ES PALTA<span className={styles.bold}>BOT</span>?</h2>
+          <button className={styles.registerButton}>REGÍSTRATE</button>
+
           <p className = {styles.fontnormalword1}>PaltaBot te ayudara a recopilar datos sobre la zona en la que planeas cultivar el “oro” verde, nosotros nos encargamos de darte los datos necesarios e importantes para el desarrollo correcto de tu cultivo para que tu puedas tomar mejores decisiones con la información obtenida.</p>
           <div className={styles.featureCards}>
             <div className={styles.featureCard}>
