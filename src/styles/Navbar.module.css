@@ -1,10 +1,11 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   }
   
   .logo {
@@ -17,6 +18,7 @@
     list-style: none;
     display: flex;
     gap: 2rem;
+    justify-content: flex-start;
   }
   
   .navLinks li {
@@ -31,4 +33,7 @@
     padding: 0.5rem 1rem;
     border-radius: 5px;
   }
-  
+  .svgLogo {
+    width: 50px;
+    height: 50px;
+  }

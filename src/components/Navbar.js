@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
+      <Image src="/images/logooo.svg" alt="Logo" width={50} height={50} />
       <div className={styles.logo}>PALTA<span>BOT</span></div>
       <ul className={styles.navLinks}>
         <li>Nosotros</li>
