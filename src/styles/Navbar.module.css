@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #32a852;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navLinks li {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .contactButton {
+    background-color: #32a852;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
