@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["./src/*"],
-      "@app/pages/layout": ["./src/app/pages/index.js"]
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"]
     }
-  }
+  },
+  "include": ["src"]
 }

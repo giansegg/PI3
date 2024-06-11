@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -12,6 +13,10 @@ export default function Navbar() {
         <li>Alianzas</li>
         <li>Testimonios</li>
         <li>Blog</li>
+        <li>
+          <Link href="/dashboard"> Sign In </Link>
+        </li>
+    
         <li className={styles.contactButton}>+51 987 654 321</li>
       </ul>
     </nav>

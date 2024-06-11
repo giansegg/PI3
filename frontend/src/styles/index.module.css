@@ -1,0 +1,110 @@
+.featureCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+  }
+  
+  .featureCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .howItWorks {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .step {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .step span {
+    display: block;
+    font-size: 2rem;
+    color: #32a852;
+    font-weight: bold;
+  }
+  
+  .step h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .step p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .contactButton {
+    background-color: #32a852;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  .registerButton {
+    background-color: #32a852;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  .fontnormalword2{
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+  }
+  .fontnumber{
+    width: 130.177px;
+    height: 105px;
+    flex-shrink: 0;
+  }
+  .titletrabajar{
+    color: #4F4F4F;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110px; /* 114.583% */
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .fontnormalword1{
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    justify-content: center;
+    text-align: center;
+  }
+  
