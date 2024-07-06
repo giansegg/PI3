@@ -4,23 +4,23 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <nav className="flex flex-row justify-between font-semibold text-2xl items-center border-b-4 border-green-600 rounded-sm pb-2">
+        <nav className="flex flex-row justify-between font-medium text-xl items-center border-b-4 border-green-600 rounded-sm pb-4">
             <div className="flex flex-row gap-5 items-center">
-                <Image src="/logo.png" alt="Logo" width={60} height={60} />
-                <span>PaltaBot</span>
+                <Image src="/logo.svg" alt="Logo" width={50} height={50} />
+                <strong>PaltaBot</strong>
             </div>
             <ul className="flex flex-row gap-10">
-                <Link href="/" className="bg-gray-200 rounded-md px-4 py-2">
+                <Link href="#home" className="bg-gray-200 rounded-md px-4 py-2">
                     Inicio
                 </Link>
                 <Link
-                    href="/about"
+                    href="#about-me"
                     className="bg-gray-200 rounded-md px-4 py-2"
                 >
                     Nosotros
                 </Link>
                 <Link
-                    href="/contact"
+                    href="#contact"
                     className="bg-gray-200 rounded-md px-4 py-2"
                 >
                     Contacto
