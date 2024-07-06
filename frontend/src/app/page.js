@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/index.module.css';
 import Navbar from '../components/Navbar';
 import ContactForm from '../components/ContactForm';
-
 
 export default function Home() {
   return (
@@ -86,8 +85,6 @@ export default function Home() {
           <button className={styles.contactButton}>CONTACTANOS</button>
         </section>
 
-        
-
         <section className={styles.contact}>
           <h2>CONTACTANOS</h2>
           <ContactForm />
@@ -98,5 +95,6 @@ export default function Home() {
         <p>Derechos reservados por PaltaBot</p>
       </footer>
     </div>
+
   );
 }

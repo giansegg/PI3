@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+
 export default function Navbar() {
   return (
     <nav className="flex flex-row gap-3">
@@ -11,7 +12,6 @@ export default function Navbar() {
         <li>Alianzas</li>
         <li>Testimonios</li>
         <li>Blog</li>
-        <li>+51 987 654 321</li>
       </ul>
     </nav>
   );
