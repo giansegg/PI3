@@ -10,7 +10,7 @@ interface CardProps {
 
 export default function CardComponent(props : CardProps) {
   return (
-    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md max-w-[1400px]">
+    <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md max-w-[350px] gap-2">
       <h2 className="font-bold text-lg mb-2">{props.title}</h2>
       <Image 
         src={props.image} 
