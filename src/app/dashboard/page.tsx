@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Charts from "@/components/Charts";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { getDataForZone, checkAlerts } from "@/data/sensorData";
+import { getDataForZone, checkAlerts } from "@/data/SensorData";
 import dynamic from "next/dynamic";
 import generateReport from "@/utils/reportGenerator";
 

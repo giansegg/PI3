@@ -8,7 +8,25 @@ export default function Login() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    login(); // Esto debería incluir la lógica real de autenticación
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    let raw = JSON.stringify({
+      "email": e.target[0].value,
+      "password": e.target[1].value
+    });
+
+    let requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+
+    fetch("https://tn0xzyjwee.execute-api.us-east-1.amazonaws.com/Proyecto/usuario/login", requestOptions as RequestInit)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
   };
 
   return (

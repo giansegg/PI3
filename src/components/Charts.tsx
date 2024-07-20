@@ -10,7 +10,7 @@ import {
   Legend,
 } from "chart.js";
 import { useState, useEffect } from "react";
-import { getDataForZone } from "@/data/sensorData";
+import { getDataForZone } from "@/data/SensorData";
 
 ChartJS.register(
   CategoryScale,
