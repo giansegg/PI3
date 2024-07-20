@@ -23,6 +23,28 @@ const generateRandomData = () => {
   return data.reverse(); // Ordenar datos por tiempo
 };
 
-export const getDataForZone = (zone: string) => {
+const getDataForZone = (zone: string): SensorData[] => {
   return generateRandomData();
 };
+
+const checkAlerts = (data: SensorData[]): string[] => {
+  const alerts: string[] = [];
+  const latestData = data[data.length - 1];
+
+  // Condiciones menos estrictas para probar alertas
+  if (
+    latestData.humidity > 50 &&
+    latestData.temperature >= 20 &&
+    latestData.temperature <= 35 &&
+    latestData.luminosity > 500 &&
+    latestData.pressure < 1050
+  ) {
+    alerts.push(
+      `Alerta de plaga en zona debido a alta humedad, temperatura moderada, alta luminosidad y baja presión. Hora: ${latestData.timestamp}`
+    );
+  }
+
+  return alerts;
+};
+
+export { getDataForZone, checkAlerts };
